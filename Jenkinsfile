@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh './build.sh v5.2.1'
+        sh 'sudo ./build.sh v5.2.1'
       }
     }
   }
