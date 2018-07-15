@@ -9,6 +9,7 @@ pipeline {
     stage('Start Container') {
       steps {
         sh './start_container.sh'
+        input(message: 'Stop Container ?', id: 'stop', ok: 'stop')
       }
     }
   }
